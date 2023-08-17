@@ -1,13 +1,13 @@
 package com.movie.moviewithpager.data.remote
 
-import com.movie.moviewithpager.data.api.SpectrumApi
+import com.movie.moviewithpager.data.api.MoviesApi
 import com.movie.moviewithpager.domain.model.GenreMovieListResponse
 import com.movie.moviewithpager.domain.model.MovieDetailsResponse
 import com.movie.moviewithpager.domain.model.MovieResponse
 import retrofit2.Response
 import javax.inject.Inject
 
-class MovieDataSourceImpl @Inject constructor(private var spectrumApi: SpectrumApi) :
+class MovieDataSourceImpl @Inject constructor(private var spectrumApi: MoviesApi) :
     MovieDataSource {
     override suspend fun getMovieByCategoryDataSource(
         movieCategory: String,

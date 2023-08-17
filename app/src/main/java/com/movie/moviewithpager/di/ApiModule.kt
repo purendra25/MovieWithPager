@@ -1,7 +1,7 @@
 package com.movie.moviewithpager.di
 
 import com.movie.moviewithpager.BuildConfig
-import com.movie.moviewithpager.data.api.SpectrumApi
+import com.movie.moviewithpager.data.api.MoviesApi
 import com.movie.moviewithpager.utils.Constants
 import dagger.Module
 import dagger.Provides
@@ -62,6 +62,6 @@ object ApiModule {
 
     @Singleton
     @Provides
-    fun provideApiService(retrofit: Retrofit): SpectrumApi =
-        retrofit.create(SpectrumApi::class.java)
+    fun provideApiService(retrofit: Retrofit): MoviesApi =
+        retrofit.create(MoviesApi::class.java)
 }

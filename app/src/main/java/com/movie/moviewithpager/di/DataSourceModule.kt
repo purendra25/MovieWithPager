@@ -1,7 +1,7 @@
 package com.movie.moviewithpager.di
 
 
-import com.movie.moviewithpager.data.api.SpectrumApi
+import com.movie.moviewithpager.data.api.MoviesApi
 import com.movie.moviewithpager.data.remote.MovieDataSource
 import com.movie.moviewithpager.data.remote.MovieDataSourceImpl
 import dagger.Module
@@ -16,7 +16,7 @@ class DataSourceModule {
 
     @Singleton
     @Provides
-    fun provideMovieDataSource(spectrumApi: SpectrumApi): MovieDataSource {
+    fun provideMovieDataSource(spectrumApi: MoviesApi): MovieDataSource {
         return MovieDataSourceImpl(spectrumApi)
     }
 }

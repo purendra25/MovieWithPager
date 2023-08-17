@@ -9,7 +9,7 @@ import retrofit2.http.GET
 import retrofit2.http.Path
 import retrofit2.http.Query
 
-interface SpectrumApi {
+interface MoviesApi {
 
     @GET("movie/{category}")
     suspend fun getMovieByCategory(
