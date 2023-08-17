@@ -1,0 +1,53 @@
+
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.2.1'
+
+
+
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.21"
+
+        //
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:2.5.3"
+
+        classpath 'com.google.dagger:hilt-android-gradle-plugin:2.44'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.30'
+
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    compileSdkVersion = 33
+    minSdkVersion = 24
+    targetSdkVersion = 33
+    activityVersion = "1.6.1"
+    constraintLayoutVersion = '1.1.3'
+    coroutinesVersion = '1.6.4'
+    retrofitVersion = "2.9.0"
+    glideVersion = "4.13.2"
+    okhttpVersion = "4.10.0"
+    lifeCycleVersion = '2.2.0'
+    daggerHiltVersion = '2.44'
+    room_version = '2.5.0'
+    hiltLifeCycleVersion = '1.0.0-alpha03'
+
+}

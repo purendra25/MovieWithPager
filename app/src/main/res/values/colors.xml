@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black_500">#161a1d</color>
+    <color name="black_700">#0b090a</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="color_bg_nav_bar">#003049</color>
+    <color name="color_primary">#c1121f</color>
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_bottom_nav"
+    app:startDestination="@id/menu_home_nav">
+
+    <fragment
+        android:id="@+id/menu_home_nav"
+        android:name="com.movie.moviewithpager.ui.features.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <argument
+            android:name="category"
+            android:defaultValue="now_playing"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/menu_popular_nav"
+        android:name="com.movie.moviewithpager.ui.features.PopularFragment"
+        android:label="fragment_popular"
+        tools:layout="@layout/fragment_popular">
+        <argument
+            android:name="category"
+            android:defaultValue="popular"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/menu_top_rated_nav"
+        android:name="com.movie.moviewithpager.ui.features.TopRatedFragment"
+        android:label="fragment_top_rated"
+        tools:layout="@layout/fragment_top_rated">
+
+        <argument
+            android:name="category"
+            android:defaultValue="top_rated"
+            app:argType="string" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/menu_upcoming_nav"
+        android:name="com.movie.moviewithpager.ui.features.UpcomingFragment"
+        android:label="fragment_upcoming"
+        tools:layout="@layout/fragment_upcoming">
+
+        <argument
+            android:name="category"
+            android:defaultValue="upcoming"
+            app:argType="string" />
+
+    </fragment>
+
+</navigation>
